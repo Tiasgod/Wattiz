@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wattiz — Controle sua energia em tempo real</title>
+  <meta name="description" content="Monitore, entenda e reduza seu consumo de eletricidade com inteligência artificial. Simples para qualquer pessoa, poderoso para qualquer negócio." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header">
+  <div class="header-inner">
+    <a href="#hero" class="logo">
+      <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      <span class="logo-text">Watt<span>iz</span></span>
+    </a>
+
+    <nav class="nav">
+      <a href="#hero">Início</a>
+      <a href="#intro">Sobre</a>
+      <a href="#features">Funcionalidades</a>
+      <a href="#product">Produto</a>
+      <a href="#pricing">Planos</a>
+      <a href="#contact">Contato</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#" class="btn btn-ghost">Entrar</a>
+      <a href="#" class="btn btn-energy">Começar agora</a>
+    </div>
+
+    <button class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('show')" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+
+  <div class="mobile-menu">
+    <a href="#hero">Início</a>
+    <a href="#intro">Sobre</a>
+    <a href="#features">Funcionalidades</a>
+    <a href="#product">Produto</a>
+    <a href="#pricing">Planos</a>
+    <a href="#contact">Contato</a>
+    <a href="#" class="btn btn-energy" style="margin-top:0.5rem">Começar agora</a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="hero" class="hero">
+  <div class="hero-bg">
+    <img src="hero-bg.jpg" alt="" width="1920" height="1080" />
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="container hero-content">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      <span class="hero-badge-text">Plataforma inteligente de energia</span>
+    </div>
+
+    <h1>
+      Controle sua <span class="text-gradient-energy">energia</span><br/>em tempo real.
+    </h1>
+
+    <p class="hero-desc">
+      Monitore, entenda e reduza seu consumo de eletricidade com inteligência artificial. 
+      Simples para qualquer pessoa, poderoso para qualquer negócio.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#" class="btn btn-energy btn-lg glow-energy" style="transition: box-shadow 0.3s;">
+        Começar agora
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#" class="btn btn-outline btn-lg">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+        Ver demonstração
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-value energy">40%</div>
+        <span>economia média</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div>
+        <div class="hero-stat-value white">10k+</div>
+        <span>famílias monitoradas</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div>
+        <div class="hero-stat-value white">24/7</div>
+        <span>monitoramento</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-indicator-inner">
+      <div class="scroll-dot"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INTRO ===== -->
+<section id="intro" class="section section-bg">
+  <div class="container">
+    <div class="section-header animate-fade-in-up">
+      <span class="section-label">O problema</span>
+      <h2 class="section-title">Quem não mede, <span class="text-gradient-energy">não gerencia</span></h2>
+      <p class="section-desc">A maioria das famílias brasileiras só descobre o consumo de energia quando a conta chega. Com Wattiz, você entende cada watt em tempo real.</p>
+    </div>
+
+    <div class="intro-grid">
+      <div class="intro-card animate-fade-in-up-d1">
+        <div class="intro-card-icon">
+          <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3>Visibilidade Total</h3>
+        <p>Veja o consumo de cada aparelho, em tempo real, direto no celular. Sem surpresas na conta.</p>
+      </div>
+
+      <div class="intro-card animate-fade-in-up-d2">
+        <div class="intro-card-icon">
+          <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3>IA Inteligente</h3>
+        <p>Nossa IA aprende seus padrões e sugere ações concretas para economizar energia todo dia.</p>
+      </div>
+
+      <div class="intro-card animate-fade-in-up-d3">
+        <div class="intro-card-icon">
+          <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"/><polyline points="16 17 22 17 22 11"/></svg>
+        </div>
+        <h3>Economia Real</h3>
+        <p>Famílias que usam Wattiz economizam em média 40% na conta de luz nos primeiros 3 meses.</p>
+      </div>
+    </div>
+
+    <!-- Energy Meter -->
+    <div class="energy-meter animate-fade-in-up-d4">
+      <div class="energy-meter-grid">
+        <div>
+          <span class="energy-meter-label">Medidor inteligente</span>
+          <h3>Consumo em tempo real</h3>
+          <p class="desc">Acompanhe seu gasto energético segundo a segundo, com dados precisos e visualizações claras.</p>
+          <div class="meter-stats">
+            <div>
+              <div class="meter-stat-value energy">R$ 187</div>
+              <div class="meter-stat-label">Custo estimado este mês</div>
+            </div>
+            <div>
+              <div class="meter-stat-value">342 kWh</div>
+              <div class="meter-stat-label">Consumo atual</div>
+            </div>
+          </div>
+        </div>
+        <div class="meter-circle">
+          <div class="meter-svg-wrap">
+            <svg class="meter-svg" viewBox="0 0 100 100">
+              <circle class="bg-circle" cx="50" cy="50" r="42" />
+              <circle class="progress-circle" cx="50" cy="50" r="42" />
+            </svg>
+            <div class="meter-center">
+              <span class="meter-center-value">65%</span>
+              <span class="meter-center-label">da meta</span>
+            </div>
+          </div>
+          <div class="meter-legend">
+            <span><span class="meter-legend-dot" style="background:var(--energy)"></span>Consumido</span>
+            <span><span class="meter-legend-dot" style="background:var(--dark-border)"></span>Disponível</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LUME AI ===== -->
+<section class="lume-section bg-gradient-dark section-dark">
+  <div class="container">
+    <div class="lume-grid">
+      <div class="animate-fade-in-left">
+        <div class="lume-label">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+          <span>Assistente IA</span>
+        </div>
+        <h2>Conheça a <span class="text-gradient-energy">Lume</span></h2>
+        <p class="desc">Sua assistente de energia com voz. Lume analisa seu consumo em tempo real e conversa com você, dando dicas práticas para economizar, tudo de forma simples e intuitiva.</p>
+
+        <div class="lume-chat">
+          <div class="lume-chat-header">
+            <div class="lume-chat-avatar">
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+            </div>
+            <span class="lume-chat-status">Lume está falando...</span>
+            <div class="lume-wave-bars">
+              <div class="lume-wave-bar" style="height:8px"></div>
+              <div class="lume-wave-bar" style="height:8px"></div>
+              <div class="lume-wave-bar" style="height:8px"></div>
+              <div class="lume-wave-bar" style="height:8px"></div>
+            </div>
+          </div>
+          <p class="lume-chat-msg">"Seu consumo aumentou 15% hoje em relação a ontem. O ar-condicionado está ligado há 8 horas. Deseja ativar o modo econômico?"<span class="lume-cursor">|</span></p>
+        </div>
+
+        <button class="lume-btn">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+          Falar com Lume
+        </button>
+      </div>
+
+      <div class="lume-image-wrap animate-fade-in-scale">
+        <div class="lume-glow"></div>
+        <img src="lume-ai.png" alt="Lume AI" width="512" height="512" loading="lazy" />
+        <div class="lume-shadow"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ANNOUNCEMENT ===== -->
+<section class="announcement">
+  <div class="energy-line"></div>
+  <div class="energy-line"></div>
+  <div class="energy-line"></div>
+  <div class="energy-line"></div>
+  <div class="energy-line"></div>
+
+  <div class="container announcement-content">
+    <div class="announcement-badge">
+      <svg class="icon-sm" style="color:var(--energy)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      <span>Novidade 2026</span>
+    </div>
+    <h2>O futuro da energia é <span class="text-gradient-energy">inteligente</span> e acessível</h2>
+    <p class="desc">Tecnologia de ponta ao alcance de todos. Monitoramento, IA e economia — tudo em um só lugar.</p>
+    <div class="announcement-img">
+      <img src="dashboard-preview.jpg" alt="Dashboard Wattiz" width="1280" height="720" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section id="features" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Funcionalidades</span>
+      <h2 class="section-title">Tudo que você precisa para <span class="text-gradient-energy">economizar</span></h2>
+      <p class="section-desc">Ferramentas poderosas, interface simples. Tecnologia que trabalha para você.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Monitoramento em Tempo Real</h3>
+        <p>Acompanhe o consumo de energia segundo a segundo, com precisão industrial.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg>
+        </div>
+        <h3>Análise com IA</h3>
+        <p>Algoritmos inteligentes que aprendem seus hábitos e otimizam seu consumo.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+        </div>
+        <h3>Insights de Consumo</h3>
+        <p>Relatórios detalhados por aparelho, dia, semana e mês para decisões melhores.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg>
+        </div>
+        <h3>Redução de Custos</h3>
+        <p>Identifique desperdícios e economize até 40% na conta de luz todo mês.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+        </div>
+        <h3>Alertas Inteligentes</h3>
+        <p>Notificações quando o consumo sai do padrão ou quando há picos inesperados.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">
+          <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+        </div>
+        <h3>App Simples</h3>
+        <p>Interface intuitiva que qualquer pessoa pode usar, sem conhecimento técnico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCT ===== -->
+<section id="product" class="section section-bg">
+  <div class="container">
+    <div class="product-grid">
+      <div class="animate-fade-in-left">
+        <span class="section-label" style="text-align:left;display:block">Hardware</span>
+        <h2 class="section-title" style="text-align:left">Wattiz <span class="text-gradient-energy">Meter</span></h2>
+        <p class="section-desc" style="text-align:left;margin-bottom:2rem">Nosso medidor inteligente se conecta ao seu quadro elétrico em minutos. Sem obras, sem complicações. Plug &amp; play.</p>
+
+        <div class="product-features">
+          <div class="product-feature">
+            <div class="product-feature-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg>
+            </div>
+            <div>
+              <h4>Leitura precisa</h4>
+              <p>Sensor de alta resolução que mede cada watt consumido</p>
+            </div>
+          </div>
+          <div class="product-feature">
+            <div class="product-feature-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13a10 10 0 0 1 14 0"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M2 8.82a15 15 0 0 1 20 0"/><line x1="12" x2="12.01" y1="20" y2="20"/></svg>
+            </div>
+            <div>
+              <h4>Conexão Wi-Fi</h4>
+              <p>Envia dados em tempo real para a plataforma na nuvem</p>
+            </div>
+          </div>
+          <div class="product-feature">
+            <div class="product-feature-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <div>
+              <h4>Segurança</h4>
+              <p>Dados criptografados e armazenamento seguro na cloud</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn-energy">
+          Quero o meu
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="product-image animate-fade-in-scale">
+        <img src="smart-meter.png" alt="Wattiz Smart Meter" width="800" height="800" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section id="pricing" class="section pricing">
+  <div class="pricing-glow"></div>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Planos</span>
+      <h2 class="section-title">Escolha o plano ideal</h2>
+      <p class="section-desc">Comece grátis e evolua conforme sua necessidade</p>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- Básico -->
+      <div class="pricing-card">
+        <div class="pricing-icon default">
+          <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3>Básico</h3>
+        <p class="pricing-desc">Para famílias que querem começar a economizar</p>
+        <div class="pricing-price">
+          <span class="pricing-price-value">Grátis</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg class="check-icon check-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Monitoramento em tempo real</li>
+          <li><svg class="check-icon check-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Relatório mensal de consumo</li>
+          <li><svg class="check-icon check-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Alertas de consumo alto</li>
+          <li><svg class="check-icon check-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>1 dispositivo</li>
+        </ul>
+        <a href="#" class="btn btn-secondary btn-full">Começar grátis</a>
+      </div>
+
+      <!-- Pro -->
+      <div class="pricing-card popular">
+        <div class="pricing-popular-badge">Mais popular</div>
+        <div class="pricing-icon popular">
+          <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"/></svg>
+        </div>
+        <h3>Pro</h3>
+        <p class="pricing-desc">IA avançada + controle total da energia</p>
+        <div class="pricing-price">
+          <span class="pricing-price-value">R$ 29</span>
+          <span class="pricing-price-period">/mês</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg class="check-icon check-energy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Tudo do plano Básico</li>
+          <li><svg class="check-icon check-energy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>IA Lume com insights diários</li>
+          <li><svg class="check-icon check-energy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Até 10 dispositivos</li>
+          <li><svg class="check-icon check-energy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Comparação com vizinhança</li>
+          <li><svg class="check-icon check-energy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Relatórios detalhados</li>
+          <li><svg class="check-icon check-energy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Suporte prioritário</li>
+        </ul>
+        <a href="#" class="btn btn-energy btn-full glow-energy">Assinar agora</a>
+      </div>
+
+      <!-- Business -->
+      <div class="pricing-card">
+        <div class="pricing-icon default">
+          <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+        </div>
+        <h3>Business</h3>
+        <p class="pricing-desc">Para comércios e pequenas empresas</p>
+        <div class="pricing-price">
+          <span class="pricing-price-value">R$ 99</span>
+          <span class="pricing-price-period">/mês</span>
+        </div>
+        <ul class="pricing-features">
+          <li><svg class="check-icon check-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Tudo do plano Pro</li>
+          <li><svg class="check-icon check-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Dispositivos ilimitados</li>
+          <li><svg class="check-icon check-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Múltiplos pontos de monitoramento</li>
+          <li><svg class="check-icon check-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>API de integração</li>
+          <li><svg class="check-icon check-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Relatórios fiscais</li>
+          <li><svg class="check-icon check-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Gerente de conta dedicado</li>
+        </ul>
+        <a href="#" class="btn btn-secondary btn-full">Falar com vendas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section testimonials">
+  <div class="particle" style="left:15%;top:20%;animation-duration:3s"></div>
+  <div class="particle" style="left:30%;top:45%;animation-duration:4s;animation-delay:0.5s"></div>
+  <div class="particle" style="left:45%;top:20%;animation-duration:5s;animation-delay:1s"></div>
+  <div class="particle" style="left:60%;top:45%;animation-duration:6s;animation-delay:1.5s"></div>
+  <div class="particle" style="left:75%;top:20%;animation-duration:4.5s;animation-delay:2s"></div>
+  <div class="particle" style="left:90%;top:45%;animation-duration:5.5s;animation-delay:2.5s"></div>
+
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Depoimentos</span>
+      <h2 class="section-title">Quem usa, <span class="text-gradient-energy">recomenda</span></h2>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-quote">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+        </div>
+        <div class="testimonial-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testimonial-text">"Nunca imaginei que era tão fácil entender minha conta de luz. Com a Wattiz, economizei R$120 no primeiro mês!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+          <div>
+            <div class="testimonial-name">Maria Santos</div>
+            <div class="testimonial-role">Dona de casa, SP</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+        </div>
+        <div class="testimonial-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testimonial-text">"Meu salão consumia muito e eu não sabia por quê. A Lume me mostrou exatamente onde cortar gastos."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">C</div>
+          <div>
+            <div class="testimonial-name">Carlos Oliveira</div>
+            <div class="testimonial-role">Dono de salão, RJ</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+        </div>
+        <div class="testimonial-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testimonial-text">"O medidor foi super fácil de instalar. Em 5 minutos já estava vendo meu consumo no celular!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">A</div>
+          <div>
+            <div class="testimonial-name">Ana Ferreira</div>
+            <div class="testimonial-role">Comerciante, MG</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-quote">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+        </div>
+        <div class="testimonial-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testimonial-text">"Mesmo sem entender de tecnologia, consegui usar. A Lume fala comigo e explica tudo simples."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">J</div>
+          <div>
+            <div class="testimonial-name">José Lima</div>
+            <div class="testimonial-role">Aposentado, BA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section id="how-it-works" class="section section-bg">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Como funciona</span>
+      <h2 class="section-title">4 passos para <span class="text-gradient-energy">economizar</span></h2>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-icon-wrap">
+          <div class="step-icon">
+            <svg class="icon-xl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"/><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"/><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"/><path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"/></svg>
+          </div>
+          <div class="step-number">1</div>
+        </div>
+        <h3>Sensor coleta dados</h3>
+        <p>O Wattiz Meter lê o consumo do seu quadro elétrico em tempo real.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-icon-wrap">
+          <div class="step-icon">
+            <svg class="icon-xl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+          </div>
+          <div class="step-number">2</div>
+        </div>
+        <h3>Envia para a nuvem</h3>
+        <p>Dados são transmitidos via Wi-Fi de forma segura e criptografada.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-icon-wrap">
+          <div class="step-icon">
+            <svg class="icon-xl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg>
+          </div>
+          <div class="step-number">3</div>
+        </div>
+        <h3>IA analisa padrões</h3>
+        <p>Algoritmos identificam desperdícios e oportunidades de economia.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-icon-wrap">
+          <div class="step-icon">
+            <svg class="icon-xl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+          </div>
+          <div class="step-number">4</div>
+        </div>
+        <h3>Você recebe insights</h3>
+        <p>Alertas, dicas e relatórios direto no app e pela voz da Lume.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== USE CASES ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Para quem é</span>
+      <h2 class="section-title">Energia inteligente para <span class="text-gradient-energy">todos</span></h2>
+    </div>
+
+    <div class="usecases-grid">
+      <div class="usecase-card">
+        <div class="usecase-img">
+          <img src="family-savings.jpg" alt="Famílias" loading="lazy" width="1024" height="680" />
+          <div class="usecase-img-overlay"></div>
+        </div>
+        <div class="usecase-body">
+          <div class="usecase-icon">
+            <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Famílias</h3>
+          <p>Entenda o consumo de cada cômodo e economize na conta mensal sem abrir mão de conforto.</p>
+        </div>
+      </div>
+
+      <div class="usecase-card">
+        <div class="usecase-img">
+          <img src="business-owner.jpg" alt="Pequenos Negócios" loading="lazy" width="1024" height="680" />
+          <div class="usecase-img-overlay"></div>
+        </div>
+        <div class="usecase-body">
+          <div class="usecase-icon">
+            <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2 2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"/></svg>
+          </div>
+          <h3>Pequenos Negócios</h3>
+          <p>Salões, padarias, lojas — descubra onde está o desperdício e aumente sua margem.</p>
+        </div>
+      </div>
+
+      <div class="usecase-card">
+        <div class="usecase-img">
+          <img src="smart-home-scene.jpg" alt="Residências" loading="lazy" width="1024" height="680" />
+          <div class="usecase-img-overlay"></div>
+        </div>
+        <div class="usecase-body">
+          <div class="usecase-icon">
+            <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+          </div>
+          <h3>Residências</h3>
+          <p>Apartamentos e casas com múltiplos aparelhos. Controle total do consumo energético.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section section-bg">
+  <div class="container faq-container">
+    <div class="section-header">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Perguntas <span class="text-gradient-energy">frequentes</span></h2>
+    </div>
+
+    <div class="faq-card">
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          Preciso de conhecimento técnico para instalar?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer"><p>Não! O Wattiz Meter foi projetado para instalação plug & play. Em 5 minutos você conecta ao quadro elétrico e começa a monitorar.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          Funciona em qualquer tipo de residência?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer"><p>Sim. Funciona em casas, apartamentos e estabelecimentos comerciais de pequeno porte com ligação monofásica ou bifásica.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          A Lume realmente fala comigo?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer"><p>Sim! A Lume é uma assistente por voz que analisa seus dados e conversa com você, dando dicas personalizadas de economia.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          Quanto posso economizar?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer"><p>Em média, nossos usuários economizam 40% na conta de luz nos primeiros 3 meses. O retorno do investimento acontece já no primeiro mês.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          Meus dados são seguros?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer"><p>Absolutamente. Todos os dados são criptografados ponta a ponta e armazenados em servidores seguros na nuvem.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          Tem mensalidade?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer"><p>O plano básico é gratuito para sempre. Planos avançados com IA completa e múltiplos dispositivos têm preços acessíveis.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section">
+  <div class="container" style="max-width:42rem">
+    <div class="section-header">
+      <span class="section-label">Contato</span>
+      <h2 class="section-title">Vamos <span class="text-gradient-energy">conversar</span></h2>
+      <p class="section-desc">Dúvidas, parcerias ou interesse? Entre em contato.</p>
+    </div>
+
+    <form class="contact-form" onsubmit="event.preventDefault()">
+      <div class="form-row">
+        <div>
+          <label>Nome</label>
+          <input class="form-input" type="text" placeholder="Seu nome" required />
+        </div>
+        <div>
+          <label>Email</label>
+          <input class="form-input" type="email" placeholder="seu@email.com" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Mensagem</label>
+        <textarea class="form-input" placeholder="Como podemos ajudar?" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-energy btn-full">
+        Enviar mensagem
+        <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="color:#fff">
+          <svg style="width:24px;height:24px;color:var(--energy)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <span class="logo-text">Watt<span>iz</span></span>
+        </div>
+        <p>Boa Energia. Poder Radical. Monitoramento inteligente para todos.</p>
+      </div>
+      <div>
+        <h4>Produto</h4>
+        <ul>
+          <li><a href="#features">Funcionalidades</a></li>
+          <li><a href="#product">Wattiz Meter</a></li>
+          <li><a href="#how-it-works">Como funciona</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#intro">Sobre</a></li>
+          <li><a href="#contact">Contato</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacidade</a></li>
+          <li><a href="#">Termos de uso</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Wattiz. Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
+
+<!-- ===== FLOATING ORB ===== -->
+<div class="floating-orb">
+  <button class="orb-button">
+    <div class="orb-ring"></div>
+    <div class="orb-pulse"></div>
+    <img src="ai-orb.png" alt="Lume AI" />
+    <div class="orb-notif"></div>
+  </button>
+</div>
+
+<!-- Mobile menu style (minimal JS-free approach using CSS toggle) -->
+<style>
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-top: 1px solid hsla(271,60%,30%,0.5);
+  background: hsla(271,80%,4%,0.97);
+}
+.mobile-menu.show {
+  display: flex;
+}
+.mobile-menu a {
+  color: hsla(0,0%,100%,0.6);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.mobile-menu a:hover {
+  color: #fff;
+}
+@media (min-width: 769px) {
+  .mobile-menu, .mobile-menu.show { display: none !important; }
+}
+</style>
+
+</body>
+</html>
