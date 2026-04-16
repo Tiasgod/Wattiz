@@ -236,9 +236,7 @@ button, input, textarea {
 }
 
 .logo-icon {
-  width: 28px;
-  height: 28px;
-  color: var(--energy);
+  width: 110px;
 }
 
 .logo-text {
