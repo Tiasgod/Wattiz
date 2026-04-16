@@ -1,2 +1,2 @@
 # Repositório da Wattiz
-Codificação do projeto;
+Codificação do projeto
